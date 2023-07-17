@@ -23,5 +23,17 @@ export default {
         type: 'string',
         title: 'Meta Description'
       },
+      {
+        name: 'location',
+        type: 'object',
+        fields: [
+          {
+            title: 'Locate',
+            name: 'locate',
+            type: 'reference',
+            to: [{type: 'location'}]
+          }
+        ]
+      },
     ]
   }
