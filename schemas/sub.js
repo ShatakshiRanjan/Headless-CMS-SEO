@@ -1,4 +1,4 @@
-// ./schemas/sub.js
+// schemas/sub.js
 
 export default {
     name: 'sub',
