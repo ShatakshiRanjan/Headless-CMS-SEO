@@ -1,5 +1,5 @@
 // ./schemas/index.js
-import sub from './sub'
+import main from './main'
 import location from './location'
 
-export const schemaTypes = [sub, location]
+export const schemaTypes = [main, location]
