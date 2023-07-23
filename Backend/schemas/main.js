@@ -42,13 +42,13 @@ export default {
       options: {
         source: function (doc) {
           const titleSlug = doc.title.toLowerCase().replace(/\s+/g, '-').slice(0, 200);
-          const locationSlug = doc.location && doc.location.locate
-            ? `${doc.location.locate.city}-${doc.location.locate.state}`.toLowerCase().replace(/\s+/g, '-').slice(0, 200)
+          const locationSlug = doc.location && doc.location.locate && doc.location.locate.state 
+            ? `${doc.location,locate.state}`.toLowerCase().replace(/\s+/g, '-').slice(0, 200)
             : '';
           // Combine the titleSlug and locationSlug to generate the final slug
           return `${titleSlug}-${locationSlug}`;
         },
-        maxLength: 400, // Specify the maximum length of the slug if desired
+        maxLength: 400, 
       }
     },
   ]
